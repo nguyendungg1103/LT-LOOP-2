@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị thiếu trong mảng</title>
+</head>
+<body>
+<script>
+    let arrs1 =[1,2,3,4,5,6,7,8,9,10];
+    let arrs2 = [3,4,5,6,7];
+    let arrs3 =[];
+    let temp = true;
+    for (let index1 in arrs1) {
+        for ( let index2 in arrs2) {
+            if(arrs1[index1]===arrs2[index2]){
+                temp=false;
+                break;
+            }
+        }
+        if (temp===true){
+            // arrs3.push(arrs1[index1])
+            console.log(index1);
+
+        }else {
+            temp = true;
+        }
+    }
+
+    console.log(arrs3);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 chuỗi có giống nhau không</title>
+</head>
+
+<body>
+
+<script>
+    let text1 = "nguyendung";
+    let text2 = "dungnguyen";
+    console.log(text2[0])
+    let array1 = text1.split("");
+    let array2 = text2.split("");
+    let check = true;
+    if (array1.length !== array2.length) {
+        alert('cha giong')
+
+    } else {
+        for (let i = 0; i < array1.length - 1; i++) {
+            if (array1[i] !== array2[i]) {
+                check = false;
+                alert('khong giong nhau');
+                break;
+            }
+
+        }
+
+        if (check) {
+            alert("giong nhau")
+
+        }
+    }
+
+</script>
+
+</body>
+</html>
